@@ -21,7 +21,7 @@ jobs:
 
     - name: Deploy to Server
       run: |
-        ssh -o StrictHostKeyChecking=no user@your-server.com 'bash -s' << 'ENDSSH'
+        ssh -o StrictHostKeyChecking=no user@172.26.244.181 'bash -s' << 'ENDSSH'
         cd /path/to/your/project
         git pull origin main
         npm install --production
